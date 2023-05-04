@@ -1658,14 +1658,31 @@ StScrollBar {
     text-shadow: none; }
     
 /* Floflis Explore menu customizations ---> */
-.applet-box:active {
-    color: #464646;
-    background-color: #f6ca38;
-}
-.applet-box:active .applet-label {
-    color: #464646;
-}
+.cinnviistarkmenu-nikokrause-applet:hover{background-color:#464646}
+.cinnviistarkmenu-nikokrause-applet:hover .applet-label{color:#fff}
+.cinnviistarkmenu-nikokrause-applet:active{background-color:#f6ca38}
+.cinnviistarkmenu-nikokrause-applet:active .applet-label{color:#464646}
+
+.menu-cinnamon-org-applet:hover{background-color:#464646}
+.menu-cinnamon-org-applet:hover .applet-label{color:#fff}
+.menu-cinnamon-org-applet:active{background-color:#f6ca38}
+.menu-cinnamon-org-applet:active .applet-label{color:#464646}
+
+.cinnamenu-json-applet:hover{background-color:#464646}
+.cinnamenu-json-applet:hover .applet-label{color:#fff}
+.cinnamenu-json-applet:active{background-color:#f6ca38} /* Didn't work */
+.cinnamenu-json-applet:active .applet-label{color:#464646} /* Didn't work */
 /* <---- Floflis Explore menu customizations */
+/* Do the same for the Search applet ---> */
+.search-box-mtwebster-applet:hover{background-color:#464646}
+.search-box-mtwebster-applet:hover .applet-label{color:#fff}
+.search-box-mtwebster-applet:hover .system-status-icon{color:#fff}
+.search-box-mtwebster-applet:active{background-color:#f6ca38} /* Didn't work */
+.search-box-mtwebster-applet:active .applet-label{color:#fff} /* Didn't work */
+.search-box-mtwebster-applet:active .system-status-icon{color:#fff} /* Didn't work */
+/* <---- Do the same for the Search applet */
+
+/*.applet-box{margin-top:2px;margin-bottom:2px;border-radius:5px}*//* Cinnamon's elements structure don't support this kind of CSS, as out-of-margin and out-of-border parts won't be hoverable; reported in https://github.com/linuxmint/cinnamon/issues/11654*/
 
 .user-icon {
   width: 32px;
